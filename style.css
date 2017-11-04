@@ -100,7 +100,7 @@ h1 {
   -webkit-order: 0;
   -ms-flex-order: 0;
   order: 0;
-  * -webkit-flex: 0 1 25%;
+  -webkit-flex: 0 1 25%;
   -ms-flex: 0 1 25%;
   flex: 0 1 25%;
 }
@@ -115,4 +115,19 @@ h1 {
 .push:active {
   transform: translate(0px, 3px);
   box-shadow: none;
+}
+
+@media screen and (max-width: 360px) {
+  body {
+    margin: 0;
+    padding: 0;
+    height: 80vh;
+  }
+  .container {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .calcButton {
+    font-size: 2em;
+  }
 }
