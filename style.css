@@ -1,0 +1,118 @@
+body {
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  height: 100vh;
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background-size: 400% 400%;
+  -webkit-animation: backgroundcolor 18s ease infinite;
+  -moz-animation: backgroundcolor 18s ease infinite;
+  animation: backgroundcolor 18s ease infinite;
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes backgroundcolor {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes backgroundcolor {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes backgroundcolor {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+h1 {
+  margin-top: 2em;
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.container {
+  width: 360px;
+  height: auto;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 7px 10px 34px 1px rgba(0, 0, 0, 0.68), inset -1px -6px 12px 0.1px #89847e;
+  background-color: #dfd8d0;
+  padding: .4em;
+}
+
+.calcDisplay {
+  outline: none;
+  font-size: 2.2em;
+  height: 10vh;
+  width: 72%;
+  border-radius: 10px;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 0 1 70%;
+  -ms-flex: 0 1 70%;
+  flex: 1 1 70%;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  background: hsl(90, 20%, 30%);
+  box-shadow: inset 2px 2px 2px 5px rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  text-align: right;
+  letter-spacing: 1px;
+}
+
+.calcButton {
+  outline: none;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #fff;
+  width: 1.5em;
+  height: 1.5em;
+  margin: .2em;
+  text-align: center;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  * -webkit-flex: 0 1 25%;
+  -ms-flex: 0 1 25%;
+  flex: 0 1 25%;
+}
+
+.push {
+  background-color: #3a3a3a;
+  box-shadow: 0px 3px 0px 0px #222121, inset -1px -3px 10px 1px #515151, inset -1px -3px 10px 1px #515151;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.push:active {
+  transform: translate(0px, 3px);
+  box-shadow: none;
+}
