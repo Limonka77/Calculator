@@ -7,7 +7,7 @@ let calculationFinished = false;
 function clearDisplay() {
   let display = document.getElementById("display");
   displayNum = "";
-  storedNum = "";
+  storeNum = "";
   operation = 0;
   nextOperation = 0;
 
@@ -40,16 +40,16 @@ function setOperation(command) {
     displayNum = display.value;
 
   evalDisplay = eval(displayNum),
-    evalStored = eval(storedNum);
+    evalStored = eval(storeNum);
 
   if (nextOperation == 0) {
-    storedNum = display.value;
+    storeNum = display.value;
   } else if (nextOperation == 1) {
     storeNum = evalStored + evalDisplay;
   } else if (nextOperation == 2) {
-    storedNum = evalStored - evalDisplay;
+    storeNum = evalStored - evalDisplay;
   } else if (nextOperation == 3) {
-    storedNum = evalStored * evalDisplay;
+    storeNum = evalStored * evalDisplay;
   }
   if (command == 'add') {
     operation = 1;
@@ -69,7 +69,7 @@ function calculate() {
   let display = document.getElementById("display");
   displayNum = display.value;
   let evalDisplay = eval(displayNum),
-    evalStored = eval(storedNum);
+    evalStored = eval(storeNum);
 
   // Do the math
   if (operation == 1) {
